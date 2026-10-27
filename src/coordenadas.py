@@ -9,6 +9,9 @@ def calcular_distancia(Coordenada1:Coordenadas,Coordenada2:Coordenadas)-> float:
     return dist
 
 def calcular_media_coordenadas(coords:list[Coordenadas])-> Coordenadas:
+    if not coords:
+        return Coordenadas(0.0, 0.0)
+  
     lat = 0
     lon = 0
     for c in coords:
